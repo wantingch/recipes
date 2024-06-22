@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+/* Root variables for consistent theme colors and fonts */
+:root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: "Arial", "Helvetica", "sans-serif";
+    --secondary-font: "Amatic SC";
+    --white: #FFFFFF;
+    --rating-color: #FFD700;
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+}
+
+/* General body styles */
+body {
+    font-family: var(--primary-font);
+    background-color: var(--text-light);
+    line-height: 2;
+}
+
+/* Main content area */
+main {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Header styles */
+.recipe-book {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    gap: 10px;
+}
+
+/* Recipe book logo settings */
+.recipe-book img {
+    height: 50px;
+    width: auto;
+}
+
+/* Recipe book header text settings */
+.recipe-book span {
+    font-family: var(--secondary-font);
+    font-size: 50px;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+/* Search form styling */
+form {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 2%;
+}
+
+/* Search input field styles */
+input[type="search"] {
+    flex: 1;
+    background-color: var(--white);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid var(--text-dark);
+    border-radius: 5px 0 0 5px;
+}
+
+/* Search button styles */
+#search-button {
+    padding: 10px 20px;
+    margin-right: 2%;
+    background-position: center;
+    border: 1px solid var(--text-dark);
+    border-left: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* Hover effect for search button */
+#search-button:hover {
+    background-color: var(--primary-color);
+}
+
+/* Decorative line under search */
+.line {
+    width: 100%;
+    border-bottom: 1px solid var(--text-dark);
+    margin: 20px 0;
+}
+
+/* Utility class for rounded corners */
+.round-corner {
+    border-radius: 5px;
+}
+
+/* Main content box styles */
+.main-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 2% 50px;
+    padding: 20px;
+    border: 1px solid var(--text-dark);
+    background-color: var(--white);
+}
+
+/* Food image styles */
+.food-image {
+    width: 300px;
+    margin-right: 25px;
+}
+
+/* Recipe info layout */
+.recipe-info {
+    flex-direction: column;
+    margin-top: 0;
+}
+
+/* Recipe category tag styles */
+.recipe-category {
+    display: inline-block;
+    background-color: var(--text-light);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for category tags */
+.recipe-category:hover {
+    background-color: var(--primary-color);
+}
+
+/* Title styling */
+.title {
+    color: var(--secondary-color);
+    font-family: var(--secondary-font);
+    font-size: 40px;
+    margin: 0;
+}
+
+/* Rating color styling */
+.rating {
+    color: var(--rating-color);
+    margin: 0;
+}
+
+/* Description text styling */
+.description {
+    margin: 0;
+}
+
+/* Social media icons layout */
+.social {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+/* Social media icon settings */
+.social img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 0;
+    font-size: 0.6em;
+    color: var(--text-dark);
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 600px) {
+    main {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .recipe-book img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 100px;
+    }
+
+    input[type="search"] {
+        height: 40px;
+        padding: 10px;
+    }
+
+    #search-button {
+        height: 20px;
+        width: 20px;
+        padding: 10px;
+    }
+
+    .main-box {
+        display: grid;
+        justify-items: center;
+        margin-bottom: 10px;
+    }
+
+    .food-image {
+        margin-right: 0;
+    }
+
+    .recipe-category {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .description {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    body {
+        max-width: 960px; /* Set maximum width of the layout */
+        margin: auto; /* Center the layout horizontally */
+        padding: 0 10px; /* Optional: add some padding on the sides */
+    }
+}
