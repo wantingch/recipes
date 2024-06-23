@@ -108,6 +108,8 @@ input[type="search"] {
     padding: 20px;
     border: 1px solid var(--text-dark);
     background-color: var(--white);
+    border-radius: 5px;
+
 }
 
 /* Food image styles */
