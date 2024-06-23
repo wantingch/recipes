@@ -223,7 +223,7 @@ footer {
 
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (min-width: 960px) {
     body {
         max-width: 960px; /* Set maximum width of the layout */
         margin: auto; /* Center the layout horizontally */
