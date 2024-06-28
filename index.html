@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipes</title>
     <link rel="stylesheet" href="recipes.css">
-    <script src="main.js" defer></script>
-    <script src="recipes.mjs" defer></script>
+    <script src="main.js" type="module" defer></script>
+    <!-- <script>document.addEventListener('DOMContentLoaded', init);</script> -->
+        
     <!-- Open Graph meta tags -->
     <meta property="og:title" content="Page Title">
     <meta property="og:type" content="website">
@@ -19,21 +20,22 @@
 <body>
     <!-- Header section -->
     <header class="recipe-book">
-        <img src="recipe-book.png" alt="Recipe Book">
+        <img src="./images/recipe-book.png" alt="Recipe Book">
         <span>Recipe Book</span>
     </header>
 
     <!-- Main content area -->
     <main>
         <form>
-            <input type="search" placeholder="Find a recipe">
-            <input type="image" id="search-button" src="search.svg" alt="Submit">
+            <input id="searchInput" type="search" placeholder="Find a recipe">
+            <input type="image" id="search-button" src="./images/search.svg" alt="Submit">
         </form>
 
         <div class="line"></div>
 
-        <div class="main-box">
-            <img class="food-image" src="apple-crisp.jpg" alt="Apple Crisp">
+    <div id="recipeContainer"></div>
+        <!-- <div class="main-box">
+            <img class="food-image" src="./images/apple-crisp.jpg" alt="Apple Crisp">
             <section class="recipe-info">
                 <div class="recipe-category">Dessert</div>
                 <h2 class="title">Apple Crisp</h2>
@@ -46,14 +48,15 @@
                 </div>
                 <p class="description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
             </section>
-        </div>
+        </div> -->
+    
     </main>
 
     <!-- Social media navigation -->
     <nav class="social">
-        <a href="#"><img src="instagram_icon.svg" alt="Instagram icon"></a>
-        <a href="#"><img src="youtube_icon.svg" alt="YouTube icon"></a>
-        <a href="#"><img src="pinterest_icon.svg" alt="Pinterest icon"></a>
+        <a href="#"><img src="./images/instagram_icon.svg" alt="Instagram icon"></a>
+        <a href="#"><img src="./images/youtube_icon.svg" alt="YouTube icon"></a>
+        <a href="#"><img src="./images/pinterest_icon.svg" alt="Pinterest icon"></a>
     </nav>
     
     <!-- Footer -->
